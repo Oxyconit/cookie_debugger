@@ -19,7 +19,7 @@ or manually by adding `gem 'cookie_debugger'` into your Gemfile.
 ## Usage
 Create a new file in the `config/initializers` folder
 
-```
+```ruby
 # config/initializers/my_cookie_debugger.rb
 
 module MyCookieDebugger
@@ -40,7 +40,7 @@ end
 ActionDispatch::DebugExceptions.prepend(MyCookieDebugger)
 ```
 Then **restart** the app and check the logs in your console or via bash command:
-```
+```bash
 cat log/development.log | grep CookieDebugger
 ```
 
